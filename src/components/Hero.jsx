@@ -6,13 +6,13 @@ import Button from './shared/Button'
 const Hero = () => {
   return (
     <Section
-        className={'pt-[10rem] -mt-[4.7rem]'}
+        className={'pt-[10rem] -mt-[5.25rem]'}
         crosses
         crossesOffset="lg:translate-y-[5.25rem]"
         customPaddings
         id="hero"
     >
-        <div className='container  relative'>
+        <div className='container h-[90vh] relative'>
             <div className='lg:flex justify-center items-center '>
                 <div className='h1 leading-relaxed'>
                     <p className=''>
@@ -23,7 +23,7 @@ const Hero = () => {
                     </p>
                     <Button> Get Stated</Button>
                 </div>
-                <div className='grid justify-center'>
+                <div className='grid justify-center z-10 '>
                     <div className='h1 w-[400px] xl:w-[600px]'> <WebDev/></div>
                     
                 </div>

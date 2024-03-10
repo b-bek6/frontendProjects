@@ -1,7 +1,7 @@
-import { ScrollParallax } from "react-just-parallax"
+import { MouseParallax, ScrollParallax } from "react-just-parallax"
 const WebDev = () => (
     <>
-    <ScrollParallax>
+    <ScrollParallax strength={0.05}>
 
    
   <svg
@@ -1211,8 +1211,8 @@ const WebDev = () => (
         fill: "#455a64",
       }}
     />
-    {/* </MouseParallax> */}
   </svg>
+    {/* </MouseParallax> */}
   </ScrollParallax>
   </>
 )
