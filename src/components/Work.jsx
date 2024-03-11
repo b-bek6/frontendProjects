@@ -18,6 +18,7 @@ const Work = () => {
       <div className="container relative">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
+          tag="Building Process"
           title="How We Work"
           text="Discover our tailored solutions for your business needs."
         />

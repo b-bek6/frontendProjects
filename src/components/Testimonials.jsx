@@ -5,11 +5,11 @@ import {motion} from 'framer-motion'
 
 // import { Autoplay, Pagination } from "swiper";
 import {Pagination , Autoplay} from 'swiper/modules'
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import SingleTestimonial from './shared/SingleTestimonial';
 import { testimonialData } from '../constants';
 
@@ -28,8 +28,9 @@ const Testimonials = () => {
           <div className="animate_top mx-auto text-center">
           <Heading
         className="md:max-w-md lg:max-w-2xl"
+        tag="important"
         title="Testimonials"
-        text=""
+        text="What our client has to say about us"
       />
           </div>
           {/* <!-- Section Title End --> */}
