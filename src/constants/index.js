@@ -1,34 +1,29 @@
 export const navigation = [
     {
       id: "0",
-      title: "Services",
-      url: "#features",
+      title: "Home",
+      url: "/",
     },
     {
       id: "1",
-      title: "how it Works",
-      url: "#pricing",
+      title: "Services",
+      url: "/services",
     },
     {
       id: "2",
-      title: "about",
-      url: "#how-to-use",
+      title: "Portfolio",
+      url: "/portfolio",
     },
     {
       id: "3",
-      title: "our work",
-      url: "#roadmap",
-    },
-    {
-      id: "4",
-      title: "Careers",
-      url: "#signup",
+      title: "About Us",
+      url: "/about",
     //   onlyMobile: true,
     },
     {
-      id: "5",
+      id: "4",
       title: "Contact",
-      url: "#signup",
+      url: "/contact",
     //   onlyMobile: true,
     }
   ];
@@ -86,7 +81,7 @@ export const NAV_LINKS = [
   // FOOTER SECTION
   export const FOOTER_LINKS = [
     {
-      title: 'Useful',
+      title: 'Useful link',
       links: [
         'Privacy Policy',
         'Terms of Service',
@@ -178,13 +173,142 @@ export const NAV_LINKS = [
     //   imageUrl: benefitImage2,
     },
   ];
+  export const WorkingProcess = [
+    {
+      id: "0",
+      title: "Requirement Analysis",
+      text: " Understand the software needs and gather specifications from stakeholders.",
+      iconUrl: "./src/assets/services/frontend.png",
+    },
+    {
+      id: "1",
+      title: "Planning",
+      text: "Create a project plan outlining tasks, timelines, and resource allocation.",
+      backgroundUrl: "./src/assets/benefits/card-2.svg",
+      iconUrl: "./src/assets/services/mobile.png",
+      light: true,
+    },
+    {
+      id: "2",
+      title: "Design",
+      text: "Translate requirements into a technical framework and detailed module designs.",
+      backgroundUrl: "./src/assets/benefits/card-3.svg",
+      iconUrl: "./src/assets/services/digital.png",
+    },
+    {
+      id: "3",
+      title: "Implementation",
+      text: "Write code, integrate modules, and develop the software.",
+      backgroundUrl: "./src/assets/benefits/card-4.svg",
+      iconUrl: "./src/assets/services/cloud.png",
+      light: true,
+    },
+    {
+      id: "4",
+      title: "Testing",
+      text: "Conduct rigorous testing including unit, integration, system, and acceptance testing.",
+      backgroundUrl: "./src/assets/benefits/card-5.svg",
+      iconUrl: "./src/assets/services/aiml.png",
+    },
+    {
+      id: "5",
+      title: "Deployment and Maintenance",
+      text: "Deploy the software to production and provide ongoing support, bug fixes, and updates.",
+      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      iconUrl: "./src/assets/services/uiux.png",
+    },
+  ];
   
 
+  export const PartnerLogo = [
+    {icon:'./src/assets/Partners/logo1.svg'},
+    {icon:'./src/assets/Partners/logo2.svg'},
+    {icon:'./src/assets/Partners/logo3.svg'},
+    {icon:'./src/assets/Partners/logo4.svg'},
+    {icon:'./src/assets/Partners/logo5.svg'},
+    {icon:'./src/assets/Partners/logo6.svg'},
+    {icon:'./src/assets/Partners/logo3.svg'},
+    {icon:'./src/assets/Partners/logo4.svg'}
+  ]
+  export const brandData = [
+    {
+      id: 0.25,
+      name: "Client",
+      href: "#",
+      image: "./src/assets/Partners/logo1.svg",
+      imageLight: "./src/assets/Partners/logo1.svg",
+    },
+    {
+      id: 0.3,
+      name: "Client",
+      href: "#",
+      image: "./src/assets/Partners/logo2.svg",
+      imageLight: "./src/assets/Partners/logo2.svg",
+    },
+    {
+      id: 0.4,
+      name: "Client",
+      href: "#",
+      image: "./src/assets/Partners/logo3.svg",
+      imageLight: "./src/assets/Partners/logo3.svg",
+    },
+    {
+      id: 0.5,
+      name: "Client",
+      href: "#",
+      image: "./src/assets/Partners/logo4.svg",
+      imageLight: "./src/assets/Partners/logo4.svg",
+    },
+    {
+      id: 0.6,
+      name: "Client",
+      href: "#",
+      image: "./src/assets/Partners/logo5.svg",
+      imageLight: "./src/assets/Partners/logo5.svg",
+    },
+    {
+      id: 0.7,
+      name: "Client",
+      href: "#",
+      image: "./src/assets/Partners/logo6.svg",
+      imageLight: "./src/assets/Partners/logo6.svg",
+    },
+  ];
 
-//   echo "# frontendProjects" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/b-bek6/frontendProjects.git
-// git push -u origin main
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: "Bibek Ghimire",
+    designation: "Code Wave Tech",
+    image: './src/assets/Partners/logo4.svg',
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+  },
+  {
+    id: 2,
+    name: "Jhon Abraham",
+    designation: "Founter @democompany",
+    image: './src/assets/Partners/logo3.svg',
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+  },
+  {
+    id: 3,
+    name: "Devid Smith",
+    designation: "Founter @democompany",
+    image: './src/assets/Partners/logo1.svg',
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+  },
+  {
+    id: 4,
+    name: "Jhon Abraham",
+    designation: "Founter @democompany",
+    image: './src/assets/Partners/logo4.svg',
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit, ligula sit amet cursus tincidunt, lorem sem elementum nisi, convallis fringilla ante nibh non urna.",
+  },
+]
+  
+  
