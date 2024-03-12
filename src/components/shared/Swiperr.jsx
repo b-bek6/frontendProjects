@@ -1,26 +1,24 @@
 import {Pagination , Autoplay, Navigation, Parallax, EffectCoverflow} from 'swiper/modules'
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { services } from '../../constants';
 import Card from './Card';
 import SwiperCore from 'swiper';
 import { useRef } from 'react';
+import { IoIosArrowBack,IoIosArrowForward } from "react-icons/io";
 
 export const Swiperr = () => {
 
   return (
-    <div className="">
+    <div className=" relative shadow-sm md:shadow-none grid  md:border-none justify-center ">
     <Swiper
       effect={'coverflow'}
       grabCursor={true}
-      centeredSlides={true}
-      loop={true}
-      slidesPerView={'3'}
-      spaceBetween={100}
-      initialSlide={0}
+      spaceBetween={1}
 
+      slidesPerView={2}
+      centeredSlides={true}
+      centerInsufficientSlides={true}
+      initialSlide={3}
       
       coverflowEffect={{
         rotate: 0,
@@ -28,6 +26,23 @@ export const Swiperr = () => {
         depth: 100,
         modifier: 2.5,
         slideShadows:false,
+      }}
+
+      breakpoints={{
+        586:{
+          slidesPerView:'auto',
+          spaceBetween:100,
+          coverflowEffect:{
+            modifier:3
+          }
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween:0,
+          coverflowEffect:{
+            modifier:3
+          }
+        },
       }}
 
       pagination={{ el: '.swiper-pagination', clickable: true }}
@@ -39,9 +54,9 @@ export const Swiperr = () => {
       modules={[EffectCoverflow, Pagination,Parallax, Navigation]}
       className="w-full"
     >
-      <div className="grid justify-center items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10">
+      <div className="grid justify-center items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 -z-1 mb-10">
                     {services.map((item) => (
-      <SwiperSlide>
+                    <SwiperSlide>
                         <Card 
                           title={item.title}
                           iconUrl={item.iconUrl}
@@ -52,27 +67,30 @@ export const Swiperr = () => {
                     </SwiperSlide>
                     ))}
                 </div>
-      <div className="slider-controler mt-8 relative grid grid-flow-col gap-40 justify-center">
+      {/* <div className="slider-controler mt-8 relative grid grid-flow-col gap-40 justify-center"> */}
 
-        <div className='custom-swiper-left'>
-          <div className='p-4  hover:bg-black rounded-full bg-color-1'></div>
+       
+      <div className="swiper-pagination w-auto">
+        d
         </div>
+        {/* 
 
+        <div className=''>
+        <div className='p-4 shadow-1  rounded-full  text-color-1 '><IoIosArrowForward/></div>
+        </div> */}
+
+      {/* </div> */}
+    </Swiper>
+    <div className='custom-swiper-left  absolute z-10 top-44 left-0 xl:-left-10'>
+          <div className='p-4 shadow-1 bg-white  rounded-full  text-color-1 '><IoIosArrowBack/></div>
+        </div>
         <div className="swiper-pagination -z-10 w-auto">
         </div>
-
-        <div className='custom-swiper-right'>
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-<svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg>
-<span class="sr-only">Icon description</span>
-</button>
+        <div className='custom-swiper-right  absolute z-10 top-44 right-0 xl:-right-10'>
+        <div className='p-4 shadow-1  rounded-full bg-white  text-color-1 '><IoIosArrowForward/></div>
         </div>
-
-      </div>
-    </Swiper>
   </div>
+  
   )
 }
 export default Swiperr

@@ -10,6 +10,10 @@ import Partners from './components/Partners'
 import FunFact from './components/Funfact'
 import Testimonials from './components/Testimonials'
 import Header1 from './components/shared/Header1'
+import Home from './Pages/Home'
+import ServicePage from './Pages/ServicePage'
+import { Route, Routes } from 'react-router-dom'
+import WebService from './Pages/ServicePages/WebService'
 
 
 const App = () => {
@@ -18,14 +22,19 @@ const App = () => {
          <div className='pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden '>
             <Header />
             {/* <Header1/> */}
-            <Hero />
+            <Routes>
+               <Route path="/" element={<Home/>} />
+               <Route path="/services" element={<ServicePage />} />
+               <Route path="/services/web" element={<WebService />} />
+            </Routes>
+            {/* <Hero />
             <Claim />
             <Services />
             {/* <FunFact/> */}
-            <Partners/>
-            <Products/>
-            <Work/>
-            <Testimonials/>
+            {/*<Partners />
+            <Products />
+            <Work />
+            <Testimonials /> */}
             <Footer />
          </div>
       </>

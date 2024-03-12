@@ -4,7 +4,7 @@ const Card = ({ iconUrl, title, text, id }) => {
     return (
         <div>
             <div
-                className='block relative bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] min-w-[20rem] rounded-[16px]'
+                className='block relative bg-white shadow-2 min-w-[20rem] rounded-[16px]'
                 key={id}
             >
                 <div className="relative z-2 grid grid-flow-row justify-center grid-rows-7  h-[25rem] p-[2.4rem] pointer-events-none">

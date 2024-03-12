@@ -81,6 +81,12 @@ export default {
           "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[80.5rem]":
             {},
         },
+        ".shadow-1":{
+          "@apply shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]":{},
+        },
+        ".shadow-2":{
+          "@apply shadow-[0_8px_30px_rgb(0,0,0,0.12)]":{},
+        },
         ".h1": {
           "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
             {},
