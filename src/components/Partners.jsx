@@ -6,9 +6,11 @@ import SingleBrand from './shared/SingleBrand'
 
 
 const Partners = () => {
+
+  
   return (
     <Section
-      className={'pt-[8rem]  pb-20 -mt-[5.25rem]'}
+      className={'pt-[12rem]  pb-[12rem] -mt-[5.25rem]'}
       crosses
     //   crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings

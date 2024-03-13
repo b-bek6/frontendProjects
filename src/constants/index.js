@@ -126,9 +126,7 @@ export const NAV_LINKS = [
       id: "0",
       title: "Web Development",
       text: "Engaging and user-friendly websites that drive conversions and enhance user experience.",
-      // backgroundUrl: "./src/assets/benefits/card-1.svg",
       iconUrl: "./src/assets/services/frontend.png",
-    //   imageUrl: benefitImage2,
     },
     {
       id: "1",
@@ -136,7 +134,6 @@ export const NAV_LINKS = [
       text: "iOS and Android app development to reach customers on the go.",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
       iconUrl: "./src/assets/services/mobile.png",
-    //   imageUrl: benefitImage2,
       light: true,
     },
     {
@@ -145,7 +142,6 @@ export const NAV_LINKS = [
       text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
       backgroundUrl: "./src/assets/benefits/card-3.svg",
       iconUrl: "./src/assets/services/digital.png",
-    //   imageUrl: benefitImage2,
     },
     {
       id: "3",
@@ -153,7 +149,6 @@ export const NAV_LINKS = [
       text: "Scalable and cost-effective cloud solutions to streamline your operations and improve efficiency.",
       backgroundUrl: "./src/assets/benefits/card-4.svg",
       iconUrl: "./src/assets/services/cloud.png",
-    //   imageUrl: benefitImage2,
       light: true,
     },
     {
@@ -162,7 +157,6 @@ export const NAV_LINKS = [
       text: "Harness the power of artificial intelligence and machine learning to gain valuable insights and drive business growth.",
       backgroundUrl: "./src/assets/benefits/card-5.svg",
       iconUrl: "./src/assets/services/aiml.png",
-    //   imageUrl: benefitImage2,
     },
     {
       id: "5",
@@ -170,7 +164,6 @@ export const NAV_LINKS = [
       text: "Intuitive and visually appealing designs that enhance user satisfaction and engagement.",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: "./src/assets/services/uiux.png",
-    //   imageUrl: benefitImage2,
     },
   ];
   export const WorkingProcess = [
