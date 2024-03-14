@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Section from './Section'
 import Heading from './shared/Heading'
 import { Pagination, Autoplay, Navigation, Parallax } from 'swiper/modules'
@@ -6,10 +6,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Swiperr from './shared/Swiperr';
-import Button from './shared/Button';
 import { MdScreenShare } from "react-icons/md";
+import { IoIosArrowBack, IoIosFastforward } from 'react-icons/io';
+
+
 const Products = () => {
+
+
   return (
     <Section
       className={'pt-[12rem] bg-n-8/10 pb-20 '}
@@ -18,103 +21,112 @@ const Products = () => {
       // customPaddings
       id="services"
     >
-      <div className='relative container'>
+      <div className='relative text-center justify-center container'>
         <Heading
           className="md:max-w-md lg:max-w-2xl"
           tag="Valuable"
           title="Our Products"
           text="Discover our tailored solutions for your business needs."
         />
+        <div className=' flex gap-8'>
 
-        <Swiper
-          style={{
-            '--swiper-navigation-color': '#fff',
-            '--swiper-pagination-color': '#fff',
-          }}
+          <Swiper
+            effect={'slide'}
+            grabCursor={false}
+            slidesPerView={2}
+            spaceBetween={10}
+            pagination={{
+              // el:".swiper-pagination",
+              type:'fraction',
+              // bulletActiveClass:".swiper-custom-bullet-active",
+              // bulletClass:".swiper-custom-bullet",
+              clickable:true
+            }}
+            navigation={{
+              nextEl: '.custom-swiper-right',
+              prevEl: '.custom-swiper-left',
+              clickable:true}}
+            modules={[Pagination, Navigation]}
+            className=''
+          >
 
-          speed={600}
-          parallax={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Parallax, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <div
-          slot="container-start"
-          className="parallax-bg"
-          // style={{
-          //   'background-image':
-          //     'url(https://swiperjs.com/demos/images/nature-1.jpg)',
-          // }}
-          data-swiper-parallax="-23%"
-        ></div>
-          <SwiperSlide>
-          <div className="w-full">
-            <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+
+
+
+            <SwiperSlide>
+              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                <p className="text-xl body-1 mb-8">Screening Solution</p>
                 <div className="mb-8">
-                    <div className=' relative bg-purple-200  rounded-full h-36 w-36'>
-                          {/* <MdScreenShare /> */}
-                    </div>
+                  <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
+                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                  </div>
                 </div>
                 <div className="text-center">
-                    <p className="text-xl  font-bold mb-2">Screening Solution</p>
-                    <p className="text-base text-gray-400 font-normal">Lorem ipsum  adipisicing elit. Qui quis ipsam nisi dolorem neque nobis, modi dolores laudantium consequatur facere! Repellendus, reiciendis!</p>
+                  <p className="caption">Lorem ipsum  adipisicing elit. Qui quis ipsam nisi dolorem neque nobis, modi dolores laudantium consequatur facere! Repellendus, reiciendis!</p>
                 </div>
-            </div>
-
-
-
-</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='  grid grid-flow-row align-middle items-center justify-center '>
-              <div className='space-y-4 shadow-1 bg-n-1 rounded-xl grid  gap-8 py-20 px-8 '>
-
-                <div className="h5  align-middle flex justify-center">Screening Solution</div>
-                <div className='grid justify-center '>
-                  <div className='p-4 rounded-lg bg-purple-200'>
-
-                    <MdScreenShare />
-                  </div>
-                </div>
-                <div className=' flex justify-center  align-middle text-center items-center'>
-
-                  <div className='text-md text-n-7 '>Lorem ipsum  temporibus, sequi harum explicabo sapi voluptate a bit more</div>
-                </div>
-                <div className='flex justify-center'>
-                  <button className='bg-purple-200 p-4 font-bold flex justify-center  rounded-lg'>View Product</button>
+                <div className='w-full text-left flex  justify-center mt-10'>
+                  <div className='p-4 py-3 hover:bg-color-1 bg-color-1/10 transition delay-150  rounded-xl button w-fit'>Explore More</div>
                 </div>
               </div>
+            </SwiperSlide>
 
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='  grid grid-flow-row align-middle items-center justify-center '>
-              <div className='space-y-4 shadow-1 bg-n-1 rounded-xl grid  gap-4 py-20 px-8 '>
+            <SwiperSlide>
 
-                <div className="h5  align-middle flex justify-center">Screening Solution</div>
-                <div className='grid justify-center '>
-                  <div className='p-4 rounded-lg bg-purple-200'>
-
-                    <MdScreenShare />
+              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                <p className="text-xl body-1 mb-8">Accounting System</p>
+                <div className="mb-8">
+                  <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
+                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
                   </div>
                 </div>
-                <div className=' flex justify-center  align-middle text-center items-center'>
-
-                  <div className='text-md text-n-7 '>Lorem ipsum  temporibus, sequi harum explicabo sapi voluptate a bit more</div>
+                <div className="text-center">
+                  <p className="caption">Lorem ipsum  adipisicing elit. Qui quis ipsam nisi dolorem neque nobis, modi dolores laudantium consequatur facere! Repellendus, reiciendis!</p>
                 </div>
-                <div className='flex justify-center'>
-                  <button className='bg-purple-200 p-4 font-bold flex justify-center  rounded-lg'>View Product</button>
+                <div className='w-full text-left flex  justify-center mt-10'>
+                  <div className='p-4 py-3 hover:bg-color-1 bg-color-1/10 transition delay-150  rounded-xl button w-fit'>Explore More</div>
                 </div>
               </div>
+            </SwiperSlide>
 
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            <SwiperSlide>
 
-        {/* <Swiperr/> */}
+              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                <p className="text-xl body-1 mb-8">College Management System</p>
+                <div className="mb-8">
+                  <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
+                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                  </div>
+                </div>
+                <div className="text-center">
+                  <p className="caption">Lorem ipsum  adipisicing elit. Qui quis ipsam nisi dolorem neque nobis, modi dolores laudantium consequatur facere! Repellendus, reiciendis!</p>
+                </div>
+                <div className='w-full text-left flex  justify-center mt-10'>
+                  <div className='p-4 py-3 hover:bg-color-1 bg-color-1/10 transition delay-150  rounded-xl button w-fit'>Explore More</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                <p className="text-xl body-1 mb-8">Video Kyc Solution</p>
+                <div className="mb-8">
+                  <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
+                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                  </div>
+                </div>
+                <div className="text-center">
+                  <p className="caption">Lorem ipsum  adipisicing elit. Qui quis ipsam nisi dolorem neque nobis, modi dolores laudantium consequatur facere! Repellendus, reiciendis!</p>
+                </div>
+                <div className='w-full text-left flex  justify-center mt-10'>
+                  <div className='p-4 py-3 hover:bg-color-1 bg-color-1/10 transition delay-150  rounded-xl button w-fit'>Explore More</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+          </Swiper>
+        </div>
+
       </div>
     </Section>
   )
