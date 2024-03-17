@@ -12,13 +12,13 @@ const Footer = () => {
         //     customPaddings
         //     id="footer"
         // >
-        <div className=' bg-black relative text-n-1'>
+        <div className=' bg-n-8/10 text-black relative '>
             <div className='container'>
                 <footer className=" pb-14">
                     <div className="flex w-full flex-col gap-10">
                         <div className="flex mt-10 flex-col items-start justify-center gap-[10%] md:flex-row">
-                            <a href="/" className="mb-10 text-color-1 font-extrabold h5">
-                                Code Wave
+                            <a href="/" className="mb-10 h5 text-color-1 font-extrabold ">
+                                <label>Code Wave Tech</label>
                             </a>
 
                             <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
@@ -42,9 +42,6 @@ const Footer = () => {
                                                 key={link.label}
                                                 className="flex gap-4 md:flex-col lg:flex-row"
                                             >
-                                                {/* <p className="whitespace-nowrap">
-                                                    {link.label}:
-                                                </p> */}
                                                 <p className="medium-14 whitespace-nowrap text-blue-70">
                                                     {link.value}
                                                 </p>
@@ -66,10 +63,12 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="border border-n-5 " />
-                        <p className="body-2 mt-4 text-n-4">2023 Code Wave | All rights reserved</p>
+                       
                     </div>
                 </footer>
+            </div>
+            <div className='h-[100px] bg-purple-900 text-white flex justify-center text-center items-center align-middle'>
+            <p className="container body-2 mt-4 text-n-4">2023 Code Wave | All rights reserved</p>
             </div>
             </div>
 

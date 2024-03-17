@@ -59,7 +59,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='grid tagline  gap-8 w-full'>
+                    <div className='grid caption  gap-4 w-full'>
                         <div className='flex  gap-8 '>
                             <input className='shadow-md border px-4 py-2 w-full focus:border-color-1 focus:outline-none focus:ring-color-1' type="text" placeholder='Full Name' />
                             <input className='shadow-md border  px-4 py-2 w-full focus:border-color-1 focus:outline-none focus:ring-color-1' type="email" placeholder='Email' />
