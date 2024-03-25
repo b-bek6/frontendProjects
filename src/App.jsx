@@ -15,6 +15,8 @@ import ServicePage from './Pages/ServicePage'
 import { Route, Routes } from 'react-router-dom'
 import WebService from './Pages/ServicePages/WebService'
 import Contact from './Pages/Contact'
+import Portfolio from './Pages/Portfolio'
+import About from './Pages/About'
 
 
 const App = () => {
@@ -28,6 +30,8 @@ const App = () => {
                <Route path="/services" element={<ServicePage />} />
                <Route path="/services/web" element={<WebService />} />
                <Route path="/contact" element={<Contact />} />
+               <Route path="/portfolio" element={<Portfolio />} />
+               <Route path="/about" element={<About />} />
             </Routes>
             {/* <Hero />
             <Claim />

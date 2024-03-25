@@ -5,6 +5,7 @@ import HamBurger from "./shared/HamBurger"
 const Header = () => {
     const [navigationOpen, setNavigationOpen] = useState(false)
 
+
   return (
     <div className={` shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] fixed top-0 left-0 z-50 w-full bg-n-1 lg:backdrop-blur-sm `}>
         <div className="flex items-center justify-between  px-5 lg:px-7.5 xl:px-10 max-lg:py-4">

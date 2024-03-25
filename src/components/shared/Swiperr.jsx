@@ -28,7 +28,8 @@ export const Swiperr = () => {
       slidesPerView={1}
       centeredSlides={true}
       centerInsufficientSlides={true}
-      initialSlide={3}
+      initialSlide={0}
+      loop={true}
       
       coverflowEffect={{
         rotate: 0,

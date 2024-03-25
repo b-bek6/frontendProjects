@@ -68,7 +68,7 @@ const Footer = () => {
                 </footer>
             </div>
             <div className='h-[100px] bg-purple-900 text-white flex justify-center text-center items-center align-middle'>
-            <p className="container body-2 mt-4 text-n-4">2023 Code Wave | All rights reserved</p>
+            <p className="container body-2 mt-4 text-n-1">2023 Code Wave | All rights reserved</p>
             </div>
             </div>
 
@@ -81,8 +81,8 @@ const Footer = () => {
 const FooterColumn = ({ title, children }) => {
     return (
         <div className="flex flex-col gap-5">
-            <h4 className="h5 font-extralight whitespace-nowrap">{title}</h4>
-            {children}
+            <h4 className="h5 whitespace-nowrap">{title}</h4>
+            <div className='text-n-8/50 '>{children}</div>
         </div>
     )
 }

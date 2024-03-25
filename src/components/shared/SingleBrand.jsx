@@ -24,15 +24,15 @@ const SingleBrand = ({ brand }) => {
         href={href}
         className="animate_top mx-w-full relative block h-10 w-[98px]"
       >
-        <img
+        {/* <img
           className=" aspect-square transition-all duration-300 hidden"
           src={image}
           alt={name}
           width={100}
           fill
-        />
+        /> */}
         <img
-          className=" aspect-square transition-all duration-300  "
+          className="aspect-square transition-all duration-300  "
           src={imageLight}
           alt={name}
           width={100}

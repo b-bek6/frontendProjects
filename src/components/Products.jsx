@@ -7,7 +7,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MdScreenShare } from "react-icons/md";
-import { IoIosArrowBack, IoIosFastforward } from 'react-icons/io';
+import {  IoMdVideocam } from 'react-icons/io';
+import { MdAccountBalance } from "react-icons/md";
+import { IoSchoolSharp } from "react-icons/io5";
 
 
 const Products = () => {
@@ -33,7 +35,8 @@ const Products = () => {
           <Swiper
             effect={'slide'}
             grabCursor={false}
-            slidesPerView={2}
+            style={{ "--swiper-navigation-color": "dark", }}
+            slidesPerView={1}
             spaceBetween={10}
             pagination={{
               // el:".swiper-pagination",
@@ -42,10 +45,16 @@ const Products = () => {
               // bulletClass:".swiper-custom-bullet",
               clickable:true
             }}
-            navigation={{
-              nextEl: '.custom-swiper-right',
-              prevEl: '.custom-swiper-left',
-              clickable:true}}
+            breakpoints={{
+              786:{
+                slidesPerView:2,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+            }}
+
+            navigation={{clickable:true}}
             modules={[Pagination, Navigation]}
             className=''
           >
@@ -54,7 +63,7 @@ const Products = () => {
 
 
             <SwiperSlide>
-              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+              <div className="w-full h-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                 <p className="text-xl body-1 mb-8">Screening Solution</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
@@ -72,11 +81,11 @@ const Products = () => {
 
             <SwiperSlide>
 
-              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+              <div className="w-full h-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                 <p className="text-xl body-1 mb-8">Accounting System</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                    <MdAccountBalance className='h-20 w-20 text-purple-900 ' />
                   </div>
                 </div>
                 <div className="text-center">
@@ -90,11 +99,11 @@ const Products = () => {
 
             <SwiperSlide>
 
-              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+              <div className="w-full h-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                 <p className="text-xl body-1 mb-8">College Management System</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                    <IoSchoolSharp className='h-20 w-20 text-purple-900 ' />
                   </div>
                 </div>
                 <div className="text-center">
@@ -107,11 +116,11 @@ const Products = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="w-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+              <div className="w-full h-full bg-n-1 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                 <p className="text-xl body-1 mb-8">Video Kyc Solution</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                    <IoMdVideocam className='h-20 w-20 text-purple-900 ' />
                   </div>
                 </div>
                 <div className="text-center">

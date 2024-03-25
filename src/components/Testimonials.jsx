@@ -16,7 +16,7 @@ import { testimonialData } from '../constants';
 const Testimonials = () => {
   return (
     <Section
-    className={'pt-[12rem] pb-20  -mt-[5.25rem]'}
+    className={'pt-[12rem] pb-20 -mt-[5.25rem]'}
     crosses
     // crossesOffset="lg:translate-y-[5.25rem]"
     // customPaddings
