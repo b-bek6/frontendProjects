@@ -1,7 +1,4 @@
-import BottomLine from "../assets/HeroSvg/BottomLine"
-import { services } from "../constants"
 import Section from "./Section"
-import Card from "./shared/Card"
 import Heading from "./shared/Heading"
 import Swiperr from "./shared/Swiperr"
 
@@ -17,7 +14,7 @@ const Services = () => {
     >
       <div className="container relative">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md text-left lg:max-w-2xl"
           tag="Happy To Help"
           title="Our Services"
           text="Discover our tailored solutions for your business needs."

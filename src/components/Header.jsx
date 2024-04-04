@@ -5,14 +5,13 @@ import HamBurger from "./shared/HamBurger"
 import Logo from "../assets/Logo/CWD.png"
 const Header = () => {
     const [navigationOpen, setNavigationOpen] = useState(false)
-    const [show, setShow] = useState(false)
 
 
     return (
         <div className={` shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] fixed top-0 left-0 z-50 w-full bg-n-1 lg:backdrop-blur-sm `}>
             <div className="flex items-center justify-between  px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
                 <a className=' xl:mr-8' href='#hero'>
-                    <img className=" w-[8rem]" src={Logo} alt="Code Wave Tech" />
+                    <img className="w-[5rem] md:w-[8rem]" src={Logo} alt="Code Wave Tech" />
                     {/* <span className='text-2xl font-extrabold'>Code Wave Tech</span> */}
                 </a>
 
