@@ -1,15 +1,15 @@
 import React from 'react'
 import Section from '../../components/Section'
 import { motion } from 'framer-motion'
+import WebServiceSvg from '../../assets/ServicePage/WebServiceSvg'
 import Heading from '../../components/shared/Heading'
 import Testimonials from '../../components/Testimonials'
-import { MouseParallax, ScrollParallax } from 'react-just-parallax'
+import { MouseParallax } from 'react-just-parallax'
 import TechStack from '../../components/Services/TechStack'
-import animationData from '../../assets/lottieFiles/WebService.json'
+import animationData from '../../assets/lottieFiles/MobileService.json'
 import Lottie from 'react-lottie'
 
-
-const WebService = () => {
+const MobileService = () => {
     const defaultOptions = {
         loop: false,
         autoplay: true,
@@ -20,14 +20,12 @@ const WebService = () => {
       };
     return (
         <>
-
-
             <Section
                 className={'pt-[12rem] pb-20 -mt-[5.25rem]'}
                 crosses
                 crossesOffset="lg:translate-y-[5.25rem]"
                 customPaddings
-                id="services"
+                id="MobileService"
             >
                 <div className='container mx-auto max-h-[86.875rem] px-4 md:px-8 2xl:px-0 relative'>
                     <div className='lg:flex justify-center items-center '>
@@ -48,13 +46,12 @@ const WebService = () => {
                             viewport={{ once: true }}
                             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
                         >
-                            {/* <Heading title={"Website"} text={"At Code Wave Tech, we provide all the services from business requirement study, interface design to convert the solutions to digital, portable platforms through android and iOS apps with the aim of expanding further by creating other possible business potentials. We mostly use React Native to build mobile applications with latest technologies maintaining the maximum quality."}/> */}
                             <div>
                                 <div className='h1'>
-                                    Website
+                                    Moblie App Development
                                 </div>
                                 <div className='quote mt-10 text-left'>
-                                At Code Wave Tech, we provide all the services from business requirement study, interface design to convert the solutions to digital, portable platforms through android and iOS apps with the aim of expanding further by creating other possible business potentials. We mostly use React Native to build mobile applications with latest technologies maintaining the maximum quality.
+                                    At Code Wave Tech, we provide all the services from business requirement study, interface design to convert the solutions to digital, portable platforms through android and iOS apps with the aim of expanding further by creating other possible business potentials. We mostly use React Native to build mobile applications with latest technologies maintaining the maximum quality.
                                 </div>
                             </div>
                         </motion.div>
@@ -73,11 +70,13 @@ const WebService = () => {
                             viewport={{ once: true }}
                         >
                             <div className='grid justify-center z-10 '>
-                                <div className='h1 w-[400px] xl:w-[600px]'>  <Lottie
+                                <div className='h1 w-[400px] xl:w-[600px]'>
+                                    <Lottie
                                         options={defaultOptions}
                                         height={400}
                                         width={400}
-                                    /></div>
+                                    />
+                                </div>
 
                             </div>
                         </motion.div>
@@ -88,6 +87,7 @@ const WebService = () => {
             <Section
                 className={'py-[12rem]  bg-n-8/10'}
                 crosses
+                // crossesOffset="lg:translate-y-[5.25rem]"
                 customPaddings
                 id="services"
             >
@@ -120,17 +120,17 @@ const WebService = () => {
                 id="services"
             >
                 <Heading title={"Technology We Use"} tag={"Tech Stack"} />
-                <TechStack/>
+                <TechStack />
             </Section>
             <Section
                 className={' pt-[2rem] '}
                 crosses
                 id="services"
             >
-                <Testimonials/>
+                <Testimonials />
             </Section>
         </>
     )
 }
 
-export default WebService
+export default MobileService

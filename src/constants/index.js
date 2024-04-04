@@ -18,32 +18,32 @@ export const navigation = [
           id:1,
           title:"Mobile Development",
           description: "Stunning morden web design are are major services",
-          url:"/service/mobile"
+          url:"/services/mobile"
         },
-        {
-          id:2,
-          title:"system Development",
-          description: "Stunning morden web design are are major services",
-          url:"/service/system"
-        },
-        {
-          id:3,
-          title:"system Development",
-          description: "Stunning morden web design are are major services",
-          url:"/service/system"
-        },
-        {
-          id:4,
-          title:"system Development",
-          description: "Stunning morden web design are are major services",
-          url:"/service/system"
-        },
-        {
-          id:5,
-          title:"system Development",
-          description: "Stunning morden web design are are major services",
-          url:"/service/system"
-        },
+        // {
+        //   id:2,
+        //   title:"system Development",
+        //   description: "Stunning morden web design are are major services",
+        //   url:"/services/system"
+        // },
+        // {
+        //   id:3,
+        //   title:"system Development",
+        //   description: "Stunning morden web design are are major services",
+        //   url:"/services/system"
+        // },
+        // {
+        //   id:4,
+        //   title:"system Development",
+        //   description: "Stunning morden web design are are major services",
+        //   url:"/services/system"
+        // },
+        // {
+        //   id:5,
+        //   title:"system Development",
+        //   description: "Stunning morden web design are are major services",
+        //   url:"/services/system"
+        // },
       ],
     },
     {

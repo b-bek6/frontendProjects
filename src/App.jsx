@@ -9,6 +9,10 @@ import Contact from './Pages/Contact'
 import Portfolio from './Pages/Portfolio'
 import About from './Pages/About'
 import Dropdown from 'react-dropdown'
+import CloudService from './Pages/ServicePages/CloudService'
+import UiUx from './Pages/ServicePages/UiUx'
+import SystemService from './Pages/ServicePages/SystemService'
+import MobileService from './Pages/ServicePages/MobileService'
 
 
 const App = () => {        
@@ -20,6 +24,10 @@ const App = () => {
                <Route path="/" element={<Home/>} />
                <Route path="/services" element={<ServicePage />} />
                <Route path="/services/web" element={<WebService />} />
+               <Route path="/services/mobile" element={<MobileService />} />
+               <Route path="/services/system" element={<SystemService />} />
+               <Route path="/services/uiux" element={<UiUx />} />
+               <Route path="/services/cloud" element={<CloudService />} />
                <Route path="/contact" element={<Contact />} />
                <Route path="/portfolio" element={<Portfolio />} />
                <Route path="/about" element={<About />} />

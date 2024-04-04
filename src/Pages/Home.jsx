@@ -19,9 +19,10 @@ const Home = () => {
             <Products />
             <Work />
             <Section
-                className={'pt-[12rem] pb-20 -mt-[5.25rem]'}
+                className={'pt-[5rem] pb-[5rem] -mt-[5.25rem]'}
                 crosses
                 id="services"
+                customPaddings
             >
                 <Testimonials />
             </Section>
