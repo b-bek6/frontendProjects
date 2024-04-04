@@ -36,7 +36,7 @@ const Hero = () => {
                 <div className='h1 leading-relaxed'>
                     <p className=''>
                    
-                    <div className='h5 text-color-1'>Your Vision, Our Expertise</div>
+                    <div className='h5 text-color-2'>Your Vision, Our Expertise</div>
                 {/* Your Vision, Our Expertise: */}
                  Craft Seamless Digital Solutions
                     </p>

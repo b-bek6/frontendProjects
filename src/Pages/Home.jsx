@@ -6,6 +6,7 @@ import Partners from '../components/Partners'
 import Products from '../components/Products'
 import Work from '../components/Work'
 import Testimonials from '../components/Testimonials'
+import Section from '../components/Section'
 
 const Home = () => {
     return (
@@ -17,7 +18,13 @@ const Home = () => {
             <Partners />
             <Products />
             <Work />
-            <Testimonials />
+            <Section
+                className={'pt-[12rem] pb-20 -mt-[5.25rem]'}
+                crosses
+                id="services"
+            >
+                <Testimonials />
+            </Section>
         </div>
     )
 }

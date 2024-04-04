@@ -10,9 +10,9 @@ const Partners = () => {
 
   return (
     <Section
-      className={'pt-[8rem]  pb-[12rem] -mt-[5.25rem]'}
+      className={'pt-[8rem]  pb-[18rem] -mt-[5.25rem]'}
       crosses
-      //   crossesOffset="lg:translate-y-[5.25rem]"
+        // crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
       id="services"
     >

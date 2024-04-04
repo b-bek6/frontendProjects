@@ -8,7 +8,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
         <button className={classes} onClick={onClick}>
             <span className={spanClasses}>{children}</span>
             {/* {ButtonSvg(white)} */}
-            <div className="absolute rounded-md h-full w-full top-0 left-0 bottom-0 bg-color-1"></div>
+            <div className="absolute rounded-md h-full w-full top-0 left-0 bottom-0 bg-color-2"></div>
         </button>
     )
 

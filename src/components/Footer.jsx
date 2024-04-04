@@ -17,7 +17,7 @@ const Footer = () => {
                 <footer className=" pb-14">
                     <div className="flex w-full flex-col gap-10">
                         <div className="flex mt-10 flex-col items-start justify-center gap-[10%] md:flex-row">
-                            <a href="/" className="mb-10 h5 text-color-1 font-extrabold ">
+                            <a href="/" className="mb-10 h5 text-color-2 font-extrabold ">
                                 <label>Code Wave Tech</label>
                             </a>
 
@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                 </footer>
             </div>
-            <div className='h-[100px] bg-purple-900 text-white flex justify-center text-center items-center align-middle'>
+            <div className='h-[100px] bg-color-2 text-white flex justify-center text-center items-center align-middle'>
             <p className="container body-2 mt-4 text-n-1">2023 Code Wave | All rights reserved</p>
             </div>
             </div>

@@ -7,7 +7,44 @@ export const navigation = [
     {
       id: "1",
       title: "Services",
-      url: "/services",
+      subMenu:[
+        {
+          id:0,
+          title:"Web Development",
+          description: "Stunning morden web design are are major services",
+          url:"/services/web"
+        },
+        {
+          id:1,
+          title:"Mobile Development",
+          description: "Stunning morden web design are are major services",
+          url:"/service/mobile"
+        },
+        {
+          id:2,
+          title:"system Development",
+          description: "Stunning morden web design are are major services",
+          url:"/service/system"
+        },
+        {
+          id:3,
+          title:"system Development",
+          description: "Stunning morden web design are are major services",
+          url:"/service/system"
+        },
+        {
+          id:4,
+          title:"system Development",
+          description: "Stunning morden web design are are major services",
+          url:"/service/system"
+        },
+        {
+          id:5,
+          title:"system Development",
+          description: "Stunning morden web design are are major services",
+          url:"/service/system"
+        },
+      ],
     },
     {
       id: "2",
@@ -15,16 +52,9 @@ export const navigation = [
       url: "/portfolio",
     },
     {
-      id: "3",
-      title: "About Us",
-      url: "/about",
-    //   onlyMobile: true,
-    },
-    {
       id: "4",
       title: "Contact",
       url: "/contact",
-    //   onlyMobile: true,
     }
   ];
 

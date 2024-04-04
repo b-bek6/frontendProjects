@@ -9,7 +9,7 @@ const Work = () => {
   return (
     <>
     <Section
-      className={'pt-[12rem] pb-[20rem] -mt-[5.25rem]'}
+      className={'pt-[12rem] pb-[12rem] -mt-[5.25rem]'}
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -29,10 +29,10 @@ const Work = () => {
       WorkingProcess.map((item)=>(
         <div className='space-y-4'>
           
-          <div className='relative bg-n-4 w-fit rounded-full' >
+          <div className='relative bg-n-4 w-12 h-12 rounded-full' >
             <div className="absolute text-white  -top-2 left-0 font-extrabold z-1 ">{Number(item.id) + 1}
             </div>
-            <div className='absolute  rounded-full text-[15px] -top-2 p-3 -left-2 bg-n-4 '></div>
+            <div className='absolute  rounded-full text-[15px] -top-2 p-3 -left-2 bg-color-2 '></div>
             <img src={item.iconUrl}  height={10} width={50}/>
             </div>
           <div className='h6'>{item.title}</div>

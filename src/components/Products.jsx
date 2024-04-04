@@ -17,10 +17,10 @@ const Products = () => {
 
   return (
     <Section
-      className={'pt-[12rem] bg-n-8/10 pb-20 '}
+      className={'pt-[5rem] pb-[12rem] -mt-[5.25rem] bg-n-8/10 '}
       crosses
       // crossesOffset="lg:translate-y-[5.25rem]"
-      // customPaddings
+      customPaddings
       id="services"
     >
       <div className='relative text-center justify-center container'>
@@ -67,7 +67,7 @@ const Products = () => {
                 <p className="text-xl body-1 mb-8">Screening Solution</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                    <MdScreenShare className='h-20 w-20 text-color-2 ' />
                   </div>
                 </div>
                 <div className="text-center">
@@ -85,7 +85,7 @@ const Products = () => {
                 <p className="text-xl body-1 mb-8">Accounting System</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <MdAccountBalance className='h-20 w-20 text-purple-900 ' />
+                    <MdAccountBalance className='h-20 w-20 text-color-2 ' />
                   </div>
                 </div>
                 <div className="text-center">
@@ -103,7 +103,7 @@ const Products = () => {
                 <p className="text-xl body-1 mb-8">College Management System</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <IoSchoolSharp className='h-20 w-20 text-purple-900 ' />
+                    <IoSchoolSharp className='h-20 w-20 text-color-2 ' />
                   </div>
                 </div>
                 <div className="text-center">
@@ -120,7 +120,7 @@ const Products = () => {
                 <p className="text-xl body-1 mb-8">Video Kyc Solution</p>
                 <div className="mb-8">
                   <div className=' relative flex justify-center items-center  rounded-full h-20 w-20'>
-                    <IoMdVideocam className='h-20 w-20 text-purple-900 ' />
+                    <IoMdVideocam className='h-20 w-20 text-color-2 ' />
                   </div>
                 </div>
                 <div className="text-center">

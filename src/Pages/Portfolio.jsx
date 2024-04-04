@@ -16,7 +16,7 @@ const Portfolio = () => {
 
             >
                 <div className='grid grid-cols-5  justify-start items-center relative bg-n-8/10 container  h-[400px] w-full rounded-3xl'>
-                    <div className='h1 col-span-3 text-purple-800'>Discover Our Major Projects</div>
+                    <div className='h1 col-span-3 text-color-2'>Discover Our Major Projects</div>
                 </div>
             </Section>
             <Section
@@ -32,19 +32,19 @@ const Portfolio = () => {
                             <div className='space-y-5'>
                                 <div className='h6'>Made Using</div>
                                 <div className='flex flex-wrap gap-10'>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>React Js</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET Core MVC</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>React Js</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET Core MVC</div>
                                 </div>
                             </div>
                         </div>
                         <div className="w-full h-[500px] bg-n-8/10 rounded-2xl sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                            <MdScreenShare className='h-20 w-20 text-color-2 ' />
                         </div>
                     </div>
                     <div className='grid grid-flow-col gap-8 justify-center items-center  grid-cols-2  '>
                         <div className="w-full h-[500px] bg-n-8/10 rounded-2xl sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                            <MdScreenShare className='h-20 w-20 text-color-2 ' />
                         </div>
                         <div className='text-justify space-y-10 '>
                             <div className='h2 text-n-11'>Accounting System</div>
@@ -52,9 +52,9 @@ const Portfolio = () => {
                             <div className='space-y-5'>
                                 <div className='h6'>Made Using</div>
                                 <div className='flex flex-wrap gap-10'>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>React Js</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET Core MVC</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>React Js</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET Core MVC</div>
                                 </div>
                             </div>
                         </div>
@@ -66,19 +66,19 @@ const Portfolio = () => {
                             <div className='space-y-5'>
                                 <div className='h6'>Made Using</div>
                                 <div className='flex flex-wrap gap-10'>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>React Js</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET Core MVC</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>React Js</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET Core MVC</div>
                                 </div>
                             </div>
                         </div>
                         <div className="w-full h-[500px] bg-n-8/10 rounded-2xl sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                            <MdScreenShare className='h-20 w-20 text-color-2 ' />
                         </div>
                     </div>
                     <div className='grid grid-flow-col gap-8 justify-center items-center  grid-cols-2  '>
                         <div className="w-full h-[500px] bg-n-8/10 rounded-2xl sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <MdScreenShare className='h-20 w-20 text-purple-900 ' />
+                            <MdScreenShare className='h-20 w-20 text-color-2 ' />
                         </div>
                         <div className='text-justify space-y-10 '>
                             <div className='h2 text-n-11'>Video Kyc Solution</div>
@@ -86,9 +86,9 @@ const Portfolio = () => {
                             <div className='space-y-5'>
                                 <div className='h6'>Made Using</div>
                                 <div className='flex flex-wrap gap-10'>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>React Js</div>
-                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-3'>ASP.NET Core MVC</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>React Js</div>
+                                    <div className='text-n-1 w-fit rounded-2xl p-2 bg-color-1/80'>ASP.NET Core MVC</div>
                                 </div>
                             </div>
                         </div>

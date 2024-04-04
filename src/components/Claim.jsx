@@ -9,7 +9,7 @@ const Claim = () => {
     return (
 
         <Section
-            className={'py-[12rem] relative overflow-hidden  bg-n-2 -mt-[5.25rem]'}
+            className={'py-[12rem] relative overflow-hidden  bg-color-1/10 -mt-[5.25rem]'}
             crosses
             // crossesOffset="lg:translate-y-[5.25rem]"
             customPaddings
@@ -27,7 +27,7 @@ const Claim = () => {
 
                 <div className='relative flex justify-center align-middle '>
                     <div className='space-y-4'>
-                        <div className="h2 font-extrabold text-color-5">Empowering Your Digital Future</div>
+                        <div className="h2 font-extrabold text-color-2">Empowering Your Digital Future</div>
                         <div className="  text-n-4">At Code Wave Tech, we're dedicated to transforming your digital aspirations into reality. With cutting-edge technology solutions and personalized strategies, we empower businesses to thrive in the ever-evolving digital landscape. From custom software development to strategic consulting, we're here to guide you on your journey to success.</div>
                     </div>
                 </div>
